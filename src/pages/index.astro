@@ -30,23 +30,23 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
-					align="start"
-				>
+          title="Hello, je m'appelle Henri PHAM"
+          tagline="Je suis étudiant et développeur web junior."
+          align="start"
+        >
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Développeur</Pill>
+            <Pill><Icon icon="school" size="1.33em" /> Etudiant</Pill>
+            <Pill><Icon icon="sport" size="1.33em" /> Sportif</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
-					width="480"
-					height="620"
-					src="/assets/portrait.jpg"
-				/>
+          alt="Henri PHAM"
+          width="480"
+          height="620"
+          src="/assets/portrait.jpg"
+        />
 			</header>
 
 			<Skills />
@@ -54,53 +54,34 @@ const projects = (await getCollection('work'))
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-
-				<div class="cta">
-					<CallToAction href="/work/">
-						View All
-						<Icon icon="arrow-right" size="1.2em" />
-					</CallToAction>
-				</div>
+			  <header class="section-header stack gap-2 lg:gap-4">
+				<h3>Mes derniers projets</h3>
+				<p>
+				  Découvrer mes derniers projets, réalisés dans un cadre scolaire ou
+				  personnel.
+				</p>
+			  </header>
+	  
+			  <div class="gallery">
+				<Grid variant="offset">
+				  {
+					projects.map((project) => (
+					  <li>
+						<PortfolioPreview project={project} />
+					  </li>
+					))
+				  }
+				</Grid>
+			  </div>
+	  
+			  <div class="cta">
+				<CallToAction href="/work/">
+				  Tous les projets
+				  <Icon icon="arrow-right" size="1.2em" />
+				</CallToAction>
+			  </div>
 			</section>
-
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
-		</main>
+		  </main>
 
 		<ContactCTA />
 	</div>

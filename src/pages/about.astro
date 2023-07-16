@@ -5,60 +5,78 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+<BaseLayout
+  title="A propos | Henri PHAM"
+  description="Henri PHAM"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="A propos"
+        tagline="Merci d'avoir consulté mon portfolio. Vous pourrez par la suite consulter mon parcours."
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/at-work.jpg"
+          alt="A propos de moi"
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">Présentation</h2>
+        <div class="content">
+          <p>
+            Originaire de Marseille et actuellement étudiant en deuxième année de master MIAGE,
+			je suis à la recherche d'une opportunité d'alternance pour ma dernière année de formation dans le domaine du développement web. 
+			
+          </p>
+		  <p>Mon objectif est de mettre en pratique les compétences acquises à la fois à l'école et dans mes expériences personnelles.</p>
+		  <p>Tout au long de mon parcours, j'ai eu l'occasion de me familiariser avec l'algorithmie grâce au langage C. 
+			Cette expérience a été un tremplin pour approfondir mes connaissances en programmation orientée objet avec Java. 
+			J'ai également développé mes compétences en JavaScript, sur le framework Angular et acquis une expérience dans la manipulation de bases de données avec SQL.
+		  </p>
+		  <p></p>
+        </div>
+      </section>
+	  <section>
+        <h2 class="section-title">Expérience</h2>
+        <div class="content">
+          <p>Alternance en tant que développeur Java/Angular chez Wraptor Laboratories</p>
+		  <p style="color:grey;font-size:12px">(10/2022 - 05/2023)</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Cursus</h2>
+        <div class="content">
+          <p>Master MIAGE en cours (2022 - 2024)</p>
+		  <p>Licence Gestion option MIAGE (2019 - 2022)</p>
+		  <p>Baccalauréat Scientifique option Mathématique (2019)</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Compétences</h2>
+        <div class="content">
+          <p>Java</p>
+		  <p>Angular</p>
+		  <p>SQL</p>
+		  <p>Git</p>
+		  <p>Anglais (niveau B2)</p>
+        </div>
+      </section>
+	  <section>
+        <h2 class="section-title">Centre d'intérêts</h2>
+        <div class="content">
+          <p>Sport de combat</p>
+		  <p>Hardware et jeux-vidéo</p>
+		  <p>Cuisine</p>
+		  
+        </div>
+      </section>
+    </main>
 
-		<ContactCTA />
-	</div>
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
